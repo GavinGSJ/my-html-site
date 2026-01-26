@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寰宇能源开发集团 - Profile Banner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
+    </style>
+</head>
+<body>
+    <div class="w-full max-w-6xl bg-white flex flex-col md:flex-row h-auto md:h-64 shadow-[0_20px_50px_rgba(0,0,0,0.08)] relative overflow-hidden m-4">
+        <div class="absolute top-0 bottom-0 left-[33.3%] w-[1px] bg-slate-100 hidden md:block z-0"></div>
+
+        <!-- 区域 A：品牌身份 -->
+        <div class="w-full md:w-1/3 p-10 flex flex-col justify-between border-b md:border-b-0 relative z-10 bg-white border-l-[12px] border-[#00205B]">
+            <div class="w-16 h-16 flex items-center justify-center">
+                <div class="w-full h-full border-[1px] border-[#00205B] flex items-center justify-center text-[#00205B] text-2xl font-light tracking-tighter italic">UE</div>
+            </div>
+            
+            <div class="mt-8">
+                <h1 class="text-2xl font-bold text-[#00205B] leading-tight mb-2 tracking-tight">寰宇能源开发集团</h1>
+                     <p class="text-[9px] font-bold text-slate-400 tracking-[0.25em] uppercase opacity-80">UNIVERSAL ENERGY GROUP</p>
+            </div>
+        </div>
+
+        <!-- 区域 B：核心信息 -->
+        <div class="w-full md:w-2/3 p-10 flex flex-col justify-center bg-[#fafafa] relative">
+            <div class="absolute top-6 right-8 opacity-10">
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <path d="M0 0h40v1H0zM0 10h40v1H0zM0 20h40v1H0zM0 30h40v1H0z" fill="#00205B"/>
+                </svg>
+            </div>
+            
+            <div class="mb-10 relative">
+                <div class="flex items-center space-x-3 mb-4">
+                    <div class="h-[2px] w-6 bg-[#00205B]"></div>
+                    <span class="text-[9px] font-black text-[#00205B] tracking-[0.4em] uppercase">STRATEGIC POSITIONING</span>
+                </div>
+                <h2 class="text-4xl font-light text-slate-800 tracking-tight leading-tight">全球领先的综合能源服务商</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8 border-t border-slate-200">
+                <div class="space-y-1">
+                    <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest">Headquarters</span>
+                    <div class="flex items-center text-sm font-semibold text-slate-700">
+                        <span class="w-1.5 h-1.5 bg-[#00205B] mr-2"></span>
+                        中国 · 北京
+                    </div>
+                </div>
+                
+                <div class="space-y-1">
+                    <span class="text-[9px] font-bold text-slate-400 uppercase tracking-widest">Production Bases</span>
+                    <div class="flex items-center text-sm font-light italic text-slate-500">
+                        <span class="w-1.5 h-1.5 bg-slate-300 mr-2"></span>
+                        上海 / 深圳 / 休斯顿
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 right-0 w-32 h-1.5 bg-[#00205B]"></div>
+    </div>
+</body>
+</html>
