@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>埃克森美孚 (ExxonMobil)-Banner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap');
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden !important;
+            font-family: 'Inter', sans-serif;
+            background-color: #fff
+        }
+
+        .f-title-cn {
+            font-size: clamp(24px, 6.5vmin, 52px);
+            font-weight: 900;
+            line-height: 1.15;
+            letter-spacing: -.03em
+        }
+
+        .f-title-en {
+            font-size: clamp(10px, 1.6vmin, 18px);
+            font-weight: 700;
+            letter-spacing: .3em;
+            color: #94a3b8;
+            margin-top: 1.5vmin
+        }
+
+        .f-tag-label {
+            font-size: clamp(10px, 1.4vmin, 14px);
+            font-weight: 900;
+            letter-spacing: .25em;
+            color: #00205B;
+            margin-bottom: 4vmin
+        }
+
+        .f-list-text {
+            font-size: clamp(24px, 6.5vmin, 68px);
+            font-weight: 300;
+            color: #334155;
+            letter-spacing: -.04em;
+            line-height: 1.2;
+            margin-bottom: 2vmin
+        }
+
+        .f-info-text {
+            font-size: clamp(12px, 2.2vmin, 24px);
+            font-weight: 600;
+            color: #334155
+        }
+
+        .f-info-label {
+            font-size: clamp(8px, 1.1vmin, 10px);
+            font-weight: 900;
+            color: #94a3b8
+        }
+
+        .banner-wrapper {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            border-left: clamp(15px, 3vmin, 40px) solid #00205B;
+            box-sizing: border-box;
+            background: #fff
+        }
+
+        .left-panel {
+            width: 42%;
+            padding: clamp(30px, 8vmin, 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+            border-right: 1px solid #f1f5f9
+        }
+
+        .right-panel {
+            width: 58%;
+            padding: clamp(30px, 8vmin, 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #F8FAFC;
+            flex-shrink: 0;
+            position: relative
+        }
+
+        .logo-box {
+            width: clamp(100px, 32vmin, 260px);
+            height: clamp(100px, 32vmin, 260px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #00205B;
+            margin-bottom: clamp(30px, 7vmin, 70px)
+        }
+
+        .wrap-text {
+            word-break: break-word;
+            overflow-wrap: anywhere
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner-wrapper">
+        <div class="left-panel">
+            <div class="logo-box"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWsAAACLCAMAAACQq0h8AAAAllBMVEX////tGy3sABXsABztFCjsAADvQU34wsTsBCDzh4zsABHsAAvtDST84OL95ef70dPxaHD+8PH2oqfuMD76ys34tbnwWmP2qa34vsD97O31kZfzgIb72tz1mp/83d/wUlzzeoH3sLTyb3fuIDLycnr71dfvSFPuKjn0jZP2parzhIr/+Pj1lpvxYmrvOUf6zdDvTFfwVmDQx8ugAAAKkElEQVR4nO2c63riOAyGIYeSxm7LsUCBcp5SKJ3u/d/cQmzJshLggUK6O6Pvz05jx3He2JIlm61URCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEItGfpeHg/qAGTz/du0x9v4uDR7+4ufZKH85p+t3eOxgerwePGNTM3w3o0qkbPdXi5KDizjn9vpke/C7GXb849UvPGh/bwN5VO14vtK2rpvn7Ebp06kZPtaB6UMF/hLXyeqVnx0rTs1jXtX3TE8gi23oIrOGhp2709P9jXa16pdPwL2E9/Hq2Gr+c8dDzxFmrPi2dJH8H602krZK3M555pjjroEdL55FX+MeyHmus2j9R9RvirJN7UtiP/cL/B2sdcsXT4/eu8N749xmPPFecdfRJCntsrNyGdQBErsNaz7pNruOLxxoOqXR0xhPPVs43qo0rXPvm+kaskYht/Zusw+7pyp76KU7q+pm3nqcc65TMos+Ild2ENVfZrFvwllHrzDvPlGNtx3DoptHGzq0EOvNHsp7h5D3lF1+nL5P64v79JIWH6WpRn4za/DK82LxrnqmfsaxtJlcyuosOsn7o7J4/Wzfbm1yRz7pRGw1ms0GuA3ndiPUyds4y+MLL7zjYYtK1FjiRIG2YK68DrXYR7m5VGKZqy96ib9tOt7s/mm9xaOqlgwat5cb1qzVbIZZ9GPrp8vMA6/6qqgL7/HjMF1aU9fQuDmwH1Ix5qiv7xoPjeqicSUzGcLHQL9ZxrMdL06fnmPourVoe7YZtRdcrvSQgj1F0BYSsdcV2Vr1C2djcpNCi+awbizghBl2nVZ82sn76XQ1oxXjrfe7Ill1pzXfYhgyJbwrN9N1o6FiydRXdWFemsVGsq76imPrRhr1BL+7ZMjkeuFrIOqn8Y9oL8VOYouiumHVHsVVKNVJf1JIA6+hZMR+bpHRUXHl9fcRee7Aztl/AMCLx4hJ5hYvswjat5pW8uRHTwBHLmVTVRxHrkUl+6AU80hQlq0LW65i3ur83JFnXOr5HviLNcl6b9ZHAxYO9G5j3GECQ3MQGZ6u+yy6M/awQvqxG2A2+mqOvuixg/WS+XjS3Re8hvHEB60XRp95PLWeM63zeeT1wuYArs9azdxbJEH9MYQcTF8RQv/gL+x1mMOvFqAmpo6xddEhYW5uBn9iy2gU3edYvxah3LQf4sY+yrsY4A24eo8crV21JqGiEmJLk3toF7NmInB7miDbeZ73rAHVkCiIWyvqXqQDpJ2N69p8lx/p3kQGxD8LPeJy1+9w3zz0lNE26LECXuHVupYevpt45xkSFc62In4fdDK9Sshg1B3PXnWRSwNqu8Wz6yZbs/8qxrtJlTTCP0sBxDZpFrHWgkl1VcikFH1Yua+L5QNQv4sOrodk2GaC308HLfi42Op8Bv5OwTtfmUtddigpY29glMh5hiuY6x7rpHqbWewO9qY1d08EmxzqKt/tgZ9Oux/iVIuhCyazzsBXZZH1Dv/jJKCZfaB1HblFeY7VCtFcdFyT186whJk8zWBNrrht51shLtx7zTQMzxzqK0BcvcUFbTXs/w5rDptuaWxewG7LvYNP1F2kBbbiNssm4dpUwKZ4u86wh12SQmn2CzKwy1jVwjHTyORsOV92aLyKxSwO/gN7+EOvKE4WdkHhxhC4fEtlf0LvAS0LM4C1MWhRZ00dhRhqiCY/1vfmqWfqp78w1Z407Y7F3huEFhoB68FkrL9x0fjW4DeskYKLrEAubLOPQddFvgAE7wE8+vAZwF8UgaRR1uQ8XC1nbL5ENOPvv7GbGGmwa23SvwAvYaAJY661f7Rm/gckGXJl1sm7XmF5ztbfESQcQvDXwC+BiDvEodnBmDImFzMMja0UfdZQ1pFD2/7b7BPF++vusN/hN2YYRuOzEuOJDOVWcW3ZxWV6Mjhp54QHAvssH7G2oqHkL8K7ZnHGs6UyHewtZw4jd32Fst0mf+6yRRczyqB37utqkZYC1avjVcG6F2QL2B1jz8MDAnuCwdgE7jIvoF2sCTnMYC3QJazsyd0ZgY811NkR91sOU3kJkg/xqZFw2jmv+qsjaGMXSWfdzQe8edqcoYEfWd6wNZJ3l8S5hbUfm7mPZyWOmOWONrNjzfwNrkxw+xHrz06xbLhJD2JNH5xeJG0Qbwt/1BWxItvC4hLV1rzt79UHM9UEbwowDfGtuQ9jWEt5vqZTN2m0E0NWI84skYHd9UezYKGxVmXXAJawrQHFj/Kx1EmwdcojFwsI1/sKNa7ZhgwfX7P0ls3Z+MSFxNMqLGdzayvp70APMApXFKRextrjCmvmvsUacNWyJaToCdrYB2rZwca+A+RXcnbfrqHJZt51Z7pFEE4ot7nCBGnvXMSY0BvIi1uywpF2VMdb3GMt4m24uxDFGA2OZ1BvYU+eZzIVSWfcx5An2UVoONj+HPIX60RtZda1csjz7+yLWj/6sstQY6yeX+iCmGCck+GyXD0nJbq672U6aclmjX7T5DQY74CHmxqXF5/gWbqPEhsQXsa54OWfYeOC5J0yGRSGO7BUyDOwmFMnzue1kYiJhC+faceNquGR6wiGBfjHSdph2KGwe4lZI5qEaqXqtv9ksPxJ0rjCsLmPtJZ0hVcBZd5wZUOPO42YzbM5dlyBXSpsKWs1lv79svrkMUQSJs6vnQ1IuPDtJcks4SMnL4FSjconJfRJeqZRs38Je4mWsu9Rgwwoit1fwyZ8fugsKdhK9zxaFqV/N7XmWdybY+UVFDM2CjolJruH24T2oABYnl7F+pQYbktw51g+Hn+/OWRzfAwvxrUpjTQ5JkqxZzXNRaR72wb3VBBdYl7GukC7jPnF+b7dzCLbGveXjrLU7p1ga68JDkmw1UAR7Ugw7ccenL2RNso2Y2S04szAqhq3JtsAx1pE7W1Eaa7fnQiNZ9tOJQtiropdNx67ChaybzmBjwFd0Fmca807ucbVI2I6s88yTOXnbklgTv0jCgufcQaUi2O2EnxHRMT0WfyHrpZswGCoVnjEbvvG307HnxnGvYMbPmKlnmo29EmsVHdQ+mKrF+BfZp3pxq5ejsHdLWuLXoySue0meBjTu7VRBjxSwhlohrxFpWLxV3rS9yT+n2gzJGYTd87/8A6j1xN41fLxTpGIQ+QkSbVuHww6P0CV1Dut26+6gWr1KH4s/yaFH8uuNF2K3i2Bvul8qzY7Upqr1wnZpGtB6ixbgRfjBBFxwR2g+4QqmW8Zw07Liq/Ocquz5gZrf852miW2otSv4PQtNxTT+xc/bIYQu61Lr9Fnt78n5xXTkufsi2Dvcy05zNJq2G0WFZWi4f363dvqnaq+9913Fn+togTD+zRaqHuyCoEb0DaFftIvbqcC+lcivGq2VFdg3ksvwucPgXYF9C5FDkhN3VWDfQhgvavpL5cq7wL66/uGHJEFNgX1lEb/IF/EC+7rqFR4GsRoJ7CvKpd/ZUQCjDyWwS5OXG1mfri/6hgR2iVoJ7PJ0Lza7PK1j8iOQyU/35g9Xj6hzw/+7mUgkEolEIpFIJBKJRCKRSCQSiUQikUgkEolEIpFIJBKJRCKRSPTX6V8WWLr2SiLb2QAAAABJRU5ErkJggg=="
+                    crossorigin="anonymous" style="max-width:88%;max-height:88%;object-fit:contain;"></div>
+            <div class="wrap-text">
+                <div class="f-title-cn text-[#00205B]">埃克森美孚公司</div>
+                <div class="f-title-en uppercase">Exxon Mobil Corporation</div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div style="margin-bottom:10vmin">
+                <div
+                    style="height:clamp(3px,.5vmin,8px);width:clamp(40px,8vmin,100px);background:#00205B;margin-bottom:3vmin">
+                </div>
+                <div class="f-tag-label uppercase">市场定位 / MARKET POSITIONING</div>
+                <div style="display:flex; flex-direction:column;">
+                    <div class="f-list-text">全球规模领先的上市综合能源超大型企业</div>
+                    <div class="f-list-text">日产量在 450 万至 500 万桶油当量</div>
+                    <div class="f-list-text">卓越资本分配与结构性成本领先者</div>
+                </div>
+            </div>
+            <div
+                style="display:grid;grid-template-columns:1fr;gap:6vmin;padding-top:4vmin;border-top:1px solid #e2e8f0">
+                <div>
+                    <div class="f-info-label uppercase">总部 / HQ</div>
+                    <div class="f-info-text mt-1" style="display:flex;align-items:center;"><span
+                            style="width:clamp(8px,1.2vmin,14px);height:clamp(8px,1.2vmin,14px);background:#00205B;display:inline-block;margin-right:2vmin;transform:rotate(45deg)"></span>美国德克萨斯州
+                        · 斯普林</div>
+                </div>
+            </div>
+        </div>
+        <div style="position:absolute;bottom:0;right:0;width:12vw;height:clamp(6px,1.8vmin,15px);background:#00205B">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Golar LNG有限公司 (GLNG)-Banner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap');
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden !important;
+            font-family: 'Inter', sans-serif;
+            background-color: #fff
+        }
+
+        .f-title-cn {
+            font-size: clamp(24px, 6.5vmin, 52px);
+            font-weight: 900;
+            line-height: 1.15;
+            letter-spacing: -.03em
+        }
+
+        .f-title-en {
+            font-size: clamp(10px, 1.6vmin, 18px);
+            font-weight: 700;
+            letter-spacing: .3em;
+            color: #94a3b8;
+            margin-top: 1.5vmin
+        }
+
+        .f-tag-label {
+            font-size: clamp(10px, 1.4vmin, 14px);
+            font-weight: 900;
+            letter-spacing: .25em;
+            color: #00205B;
+            margin-bottom: 4vmin
+        }
+
+        .f-list-text {
+            font-size: clamp(24px, 6.5vmin, 68px);
+            font-weight: 300;
+            color: #334155;
+            letter-spacing: -.04em;
+            line-height: 1.2;
+            margin-bottom: 2vmin
+        }
+
+        .f-info-text {
+            font-size: clamp(12px, 2.2vmin, 24px);
+            font-weight: 600;
+            color: #334155
+        }
+
+        .f-info-label {
+            font-size: clamp(8px, 1.1vmin, 10px);
+            font-weight: 900;
+            color: #94a3b8
+        }
+
+        .banner-wrapper {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            border-left: clamp(15px, 3vmin, 40px) solid #00205B;
+            box-sizing: border-box;
+            background: #fff
+        }
+
+        .left-panel {
+            width: 42%;
+            padding: clamp(30px, 8vmin, 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+            border-right: 1px solid #f1f5f9
+        }
+
+        .right-panel {
+            width: 58%;
+            padding: clamp(30px, 8vmin, 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #F8FAFC;
+            flex-shrink: 0;
+            position: relative
+        }
+
+        .logo-box {
+            width: clamp(100px, 32vmin, 260px);
+            height: clamp(100px, 32vmin, 260px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #00205B;
+            margin-bottom: clamp(30px, 7vmin, 70px)
+        }
+
+        .wrap-text {
+            word-break: break-word;
+            overflow-wrap: anywhere
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner-wrapper">
+        <div class="left-panel">
+            <div class="logo-box"><img
+                    src="data:image/png;base64,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"
+                    crossorigin="anonymous" style="max-width:88%;max-height:88%;object-fit:contain;"></div>
+            <div class="wrap-text">
+                <div class="f-title-cn text-[#00205B]">Golar LNG Ltd. (GLNG)</div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div style="margin-bottom:10vmin">
+                <div
+                    style="height:clamp(3px,.5vmin,8px);width:clamp(40px,8vmin,100px);background:#00205B;margin-bottom:3vmin">
+                </div>
+                <div class="f-tag-label uppercase">市场定位 / MARKET POSITIONING</div>
+                <div style="display:flex; flex-direction:column;">
+                    <div class="f-list-text">浮式资产（FLNG）租赁运营商</div>
+                    <div class="f-list-text">领先的旧船改装技术与极速交付经验</div>
+                </div>
+            </div>
+            <div
+                style="display:grid;grid-template-columns:1fr;gap:6vmin;padding-top:4vmin;border-top:1px solid #e2e8f0">
+                <div>
+                    <div class="f-info-label uppercase">总部 / HQ</div>
+                    <div class="f-info-text mt-1" style="display:flex;align-items:center;"><span
+                            style="width:clamp(8px,1.2vmin,14px);height:clamp(8px,1.2vmin,14px);background:#00205B;display:inline-block;margin-right:2vmin;transform:rotate(45deg)"></span>英国
+                        · 汉密尔顿</div>
+                </div>
+            </div>
+        </div>
+        <div style="position:absolute;bottom:0;right:0;width:12vw;height:clamp(6px,1.8vmin,15px);background:#00205B">
+        </div>
+    </div>
+</body>
+
+</html>
