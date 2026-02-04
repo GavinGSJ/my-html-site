@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bechtel Upstream Contracts - McKinsey Style</title>
+    <style>
+        :root {
+            --mck-blue: #001F3F;
+            /* McKinsey Navy */
+            --mck-gray: #333333;
+            --mck-light-gray: #F2F2F2;
+            --mck-accent: #051C2C;
+        }
+
+        body {
+            font-family: "Baskerville", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: var(--mck-gray);
+            line-height: 1.6;
+            padding: 2vw;
+            background-color: #ffffff;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow-x: auto;
+            /* 保证在小窗口下可滑动 */
+        }
+
+        header {
+            border-bottom: 2px solid var(--mck-blue);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--mck-blue);
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        p.subtitle {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 5px 0 0 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: #ffffff;
+            color: var(--mck-blue);
+            font-weight: bold;
+            text-align: left;
+            padding: 12px 15px;
+            border-bottom: 1px solid var(--mck-blue);
+            white-space: nowrap;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid var(--mck-light-gray);
+        }
+
+        /* 麦肯锡风格通常右对齐数值 */
+        .numeric {
+            text-align: right;
+            font-family: "Georgia", serif;
+        }
+
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        .footer-note {
+            font-size: 0.75rem;
+            color: #888;
+            margin-top: 15px;
+            font-style: italic;
+        }
+
+        /* 响应式调整 */
+        @media screen and (max-width: 768px) {
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            td,
+            th {
+                padding: 8px 10px;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h2>近期中标合同 (Recent Contract Awards)</h2>
+            <p class="subtitle">Bechtel Upstream Sector Analysis | Source: Rystad Energy</p>
+        </header>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>中标日期 (Award Date)</th>
+                    <th>项目 (Project)</th>
+                    <th>资产 (Asset)</th>
+                    <th>运营商 (Operator)</th>
+                    <th class="numeric">合同价值 (MUSD)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2025-06-13</td>
+                    <td>Rio Grande LNG T5, US</td>
+                    <td>Rio Grande LNG T5</td>
+                    <td>NextDecade Corporation</td>
+                    <td class="numeric">4,770</td>
+                </tr>
+                <tr>
+                    <td>2024-12-05</td>
+                    <td>Woodside Louisiana LNG Plant 2, US</td>
+                    <td>Woodside Louisiana LNG T3</td>
+                    <td>Woodside</td>
+                    <td class="numeric">3,456</td>
+                </tr>
+                <tr>
+                    <td>2024-12-05</td>
+                    <td>Woodside Louisiana LNG Plant 1, US</td>
+                    <td>Woodside Louisiana LNG T2</td>
+                    <td>Woodside</td>
+                    <td class="numeric">3,476</td>
+                </tr>
+                <tr>
+                    <td>2024-12-05</td>
+                    <td>Woodside Louisiana LNG Plant 1, US</td>
+                    <td>Woodside Louisiana LNG T1</td>
+                    <td>Woodside</td>
+                    <td class="numeric">3,499</td>
+                </tr>
+                <tr>
+                    <td>2023-07-12</td>
+                    <td>Rio Grande LNG Phase 1, US</td>
+                    <td>Rio Grande LNG T3</td>
+                    <td>NextDecade Corporation</td>
+                    <td class="numeric">3,606</td>
+                </tr>
+                <tr>
+                    <td>2023-07-12</td>
+                    <td>Rio Grande LNG Phase 1, US</td>
+                    <td>Rio Grande LNG T1</td>
+                    <td>NextDecade Corporation</td>
+                    <td class="numeric">3,613</td>
+                </tr>
+                <tr>
+                    <td>2023-07-12</td>
+                    <td>Rio Grande LNG Phase 1, US</td>
+                    <td>Rio Grande LNG T2</td>
+                    <td>NextDecade Corporation</td>
+                    <td class="numeric">3,613</td>
+                </tr>
+                <tr>
+                    <td>2023-03-20</td>
+                    <td>Port Arthur LNG, US</td>
+                    <td>Port Arthur LNG T2</td>
+                    <td>Sempra</td>
+                    <td class="numeric">4,632</td>
+                </tr>
+                <tr>
+                    <td>2023-03-20</td>
+                    <td>Port Arthur LNG, US</td>
+                    <td>Port Arthur LNG T1</td>
+                    <td>Sempra</td>
+                    <td class="numeric">4,650</td>
+                </tr>
+                <tr>
+                    <td>2022-06-22</td>
+                    <td>Corpus Christi LNG Stage III, US</td>
+                    <td>Corpus Christi LNG Midscale T5</td>
+                    <td>Cheniere Energy</td>
+                    <td class="numeric">889</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="footer-note">* 数据包含项目级合同信息。单位：百万美元 (MUSD)。 [cite: 184, 185]</p>
+    </div>
+
+</body>
+
+</html>
