@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>埃尼股份公司 (Eni)-Banner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap');
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden !important;
+            font-family: 'Inter', sans-serif;
+            background-color: #fff
+        }
+
+        .f-title-cn {
+            font-size: clamp(24px, 6.5vmin, 52px);
+            font-weight: 900;
+            line-height: 1.15;
+            letter-spacing: -.03em
+        }
+
+        .f-title-en {
+            font-size: clamp(10px, 1.6vmin, 18px);
+            font-weight: 700;
+            letter-spacing: .3em;
+            color: #94a3b8;
+            margin-top: 1.5vmin
+        }
+
+        .f-tag-label {
+            font-size: clamp(10px, 1.4vmin, 14px);
+            font-weight: 900;
+            letter-spacing: .25em;
+            color: #00205B;
+            margin-bottom: 4vmin
+        }
+
+        .f-list-text {
+            font-size: clamp(24px, 6.5vmin, 68px);
+            font-weight: 300;
+            color: #334155;
+            letter-spacing: -.04em;
+            line-height: 1.2;
+            margin-bottom: 2vmin
+        }
+
+        .f-info-text {
+            font-size: clamp(12px, 2.2vmin, 24px);
+            font-weight: 600;
+            color: #334155
+        }
+
+        .f-info-label {
+            font-size: clamp(8px, 1.1vmin, 10px);
+            font-weight: 900;
+            color: #94a3b8
+        }
+
+        .banner-wrapper {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            border-left: clamp(15px, 3vmin, 40px) solid #00205B;
+            box-sizing: border-box;
+            background: #fff
+        }
+
+        .left-panel {
+            width: 42%;
+            padding: clamp(30px, 8vmin, 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+            border-right: 1px solid #f1f5f9
+        }
+
+        .right-panel {
+            width: 58%;
+            padding: clamp(30px, 8vmin, 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #F8FAFC;
+            flex-shrink: 0;
+            position: relative
+        }
+
+        .logo-box {
+            width: clamp(100px, 32vmin, 260px);
+            height: clamp(100px, 32vmin, 260px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #00205B;
+            margin-bottom: clamp(30px, 7vmin, 70px)
+        }
+
+        .wrap-text {
+            word-break: break-word;
+            overflow-wrap: anywhere
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner-wrapper">
+        <div class="left-panel">
+            <div class="logo-box"><img
+                    src="data:image/png;base64,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"
+                    crossorigin="anonymous" style="max-width:88%;max-height:88%;object-fit:contain;"></div>
+            <div class="wrap-text">
+                <div class="f-title-cn text-[#00205B]">埃尼集团 (Eni)</div>
+                <div class="f-title-en uppercase">Eni S.p.A.</div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div style="margin-bottom:10vmin">
+                <div
+                    style="height:clamp(3px,.5vmin,8px);width:clamp(40px,8vmin,100px);background:#00205B;margin-bottom:3vmin">
+                </div>
+                <div class="f-tag-label uppercase">市场定位 / MARKET POSITIONING</div>
+                <div style="display:flex; flex-direction:column;">
+                    <div class="f-list-text">一体化油气及能源转型集团</div>
+                    <div class="f-list-text">意大利国家能源旗舰与全球超级巨头</div>
+                    <div class="f-list-text">“卫星模式”驱动的综合能源转型者</div>
+                </div>
+            </div>
+            <div
+                style="display:grid;grid-template-columns:1fr 1fr;gap:6vmin;padding-top:4vmin;border-top:1px solid #e2e8f0">
+                <div>
+                    <div class="f-info-label uppercase">总部 / HQ</div>
+                    <div class="f-info-text mt-1" style="display:flex;align-items:center;"><span
+                            style="width:clamp(8px,1.2vmin,14px);height:clamp(8px,1.2vmin,14px);background:#00205B;display:inline-block;margin-right:2vmin;transform:rotate(45deg)"></span>意大利
+                        · 罗马</div>
+                </div>
+            </div>
+        </div>
+        <div style="position:absolute;bottom:0;right:0;width:12vw;height:clamp(6px,1.8vmin,15px);background:#00205B">
+        </div>
+    </div>
+</body>
+
+</html>

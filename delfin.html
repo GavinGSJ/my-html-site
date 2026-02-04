@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>德尔芬中游公司 (Delfin)-Banner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap');
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden !important;
+            font-family: 'Inter', sans-serif;
+            background-color: #fff
+        }
+
+        .f-title-cn {
+            font-size: clamp(24px, 6.5vmin, 52px);
+            font-weight: 900;
+            line-height: 1.15;
+            letter-spacing: -.03em
+        }
+
+        .f-title-en {
+            font-size: clamp(10px, 1.6vmin, 18px);
+            font-weight: 700;
+            letter-spacing: .3em;
+            color: #94a3b8;
+            margin-top: 1.5vmin
+        }
+
+        .f-tag-label {
+            font-size: clamp(10px, 1.4vmin, 14px);
+            font-weight: 900;
+            letter-spacing: .25em;
+            color: #00205B;
+            margin-bottom: 4vmin
+        }
+
+        .f-list-text {
+            font-size: clamp(24px, 6.5vmin, 68px);
+            font-weight: 300;
+            color: #334155;
+            letter-spacing: -.04em;
+            line-height: 1.2;
+            margin-bottom: 2vmin
+        }
+
+        .f-info-text {
+            font-size: clamp(12px, 2.2vmin, 24px);
+            font-weight: 600;
+            color: #334155
+        }
+
+        .f-info-label {
+            font-size: clamp(8px, 1.1vmin, 10px);
+            font-weight: 900;
+            color: #94a3b8
+        }
+
+        .banner-wrapper {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            border-left: clamp(15px, 3vmin, 40px) solid #00205B;
+            box-sizing: border-box;
+            background: #fff
+        }
+
+        .left-panel {
+            width: 42%;
+            padding: clamp(30px, 8vmin, 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+            border-right: 1px solid #f1f5f9
+        }
+
+        .right-panel {
+            width: 58%;
+            padding: clamp(30px, 8vmin, 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #F8FAFC;
+            flex-shrink: 0;
+            position: relative
+        }
+
+        .logo-box {
+            width: clamp(100px, 32vmin, 260px);
+            height: clamp(100px, 32vmin, 260px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #00205B;
+            margin-bottom: clamp(30px, 7vmin, 70px)
+        }
+
+        .wrap-text {
+            word-break: break-word;
+            overflow-wrap: anywhere
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner-wrapper">
+        <div class="left-panel">
+            <div class="logo-box"><img
+                    src="data:image/png;base64,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"
+                    crossorigin="anonymous" style="max-width:88%;max-height:88%;object-fit:contain;"></div>
+            <div class="wrap-text">
+                <div class="f-title-cn text-[#00205B]">德尔芬中游公司 (Delfin)</div>
+                <div class="f-title-en uppercase">Delfin Midstream Inc.</div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div style="margin-bottom:10vmin">
+                <div
+                    style="height:clamp(3px,.5vmin,8px);width:clamp(40px,8vmin,100px);background:#00205B;margin-bottom:3vmin">
+                </div>
+                <div class="f-tag-label uppercase">市场定位 / MARKET POSITIONING</div>
+                <div style="display:flex; flex-direction:column;">
+                    <div class="f-list-text">美国首个近海浮式 LNG 出口平台开发商</div>
+                    <div class="f-list-text">私人资本驱动的轻资产能源平台</div>
+                    <div class="f-list-text">“管网+浮式液化”集成运营商</div>
+                    <div class="f-list-text">模块化交付与低 FID 门槛</div>
+                </div>
+            </div>
+            <div
+                style="display:grid;grid-template-columns:1fr 1fr;gap:6vmin;padding-top:4vmin;border-top:1px solid #e2e8f0">
+                <div>
+                    <div class="f-info-label uppercase">总部 / HQ</div>
+                    <div class="f-info-text mt-1" style="display:flex;align-items:center;"><span
+                            style="width:clamp(8px,1.2vmin,14px);height:clamp(8px,1.2vmin,14px);background:#00205B;display:inline-block;margin-right:2vmin;transform:rotate(45deg)"></span>美国
+                        · 休斯顿</div>
+                </div>
+                <div>
+                    <div class="f-info-label uppercase">基地 / BASES</div>
+                    <div class="f-info-text mt-1"
+                        style="font-style:italic;font-weight:300;color:#64748b;display:flex;align-items:center;">
+                        <span
+                            style="width:clamp(8px,1.2vmin,14px);height:clamp(8px,1.2vmin,14px);background:#cbd5e1;display:inline-block;margin-right:2vmin;transform:rotate(45deg)"></span>
+                        韩国三星重工（合作船厂）
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="position:absolute;bottom:0;right:0;width:12vw;height:clamp(6px,1.8vmin,15px);background:#00205B">
+        </div>
+    </div>
+</body>
+
+</html>
