@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>韩华海洋 (Hanwha Ocean)-Banner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap');
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden !important;
+            font-family: 'Inter', sans-serif;
+            background-color: #fff
+        }
+
+        .f-title-cn {
+            font-size: clamp(24px, 6.5vmin, 52px);
+            font-weight: 900;
+            line-height: 1.15;
+            letter-spacing: -.03em
+        }
+
+        .f-title-en {
+            font-size: clamp(10px, 1.6vmin, 18px);
+            font-weight: 700;
+            letter-spacing: .3em;
+            color: #94a3b8;
+            margin-top: 1.5vmin
+        }
+
+        .f-tag-label {
+            font-size: clamp(10px, 1.4vmin, 14px);
+            font-weight: 900;
+            letter-spacing: .25em;
+            color: #00205B;
+            margin-bottom: 4vmin
+        }
+
+        .f-list-text {
+            font-size: clamp(24px, 6.5vmin, 68px);
+            font-weight: 300;
+            color: #334155;
+            letter-spacing: -.04em;
+            line-height: 1.2;
+            margin-bottom: 2vmin
+        }
+
+        .f-info-text {
+            font-size: clamp(12px, 2.2vmin, 24px);
+            font-weight: 600;
+            color: #334155
+        }
+
+        .f-info-label {
+            font-size: clamp(8px, 1.1vmin, 10px);
+            font-weight: 900;
+            color: #94a3b8
+        }
+
+        .banner-wrapper {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            border-left: clamp(15px, 3vmin, 40px) solid #00205B;
+            box-sizing: border-box;
+            background: #fff
+        }
+
+        .left-panel {
+            width: 42%;
+            padding: clamp(30px, 8vmin, 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+            border-right: 1px solid #f1f5f9
+        }
+
+        .right-panel {
+            width: 58%;
+            padding: clamp(30px, 8vmin, 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #F8FAFC;
+            flex-shrink: 0;
+            position: relative
+        }
+
+        .logo-box {
+            width: clamp(100px, 32vmin, 260px);
+            height: clamp(100px, 32vmin, 260px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #00205B;
+            margin-bottom: clamp(30px, 7vmin, 70px)
+        }
+
+        .wrap-text {
+            word-break: break-word;
+            overflow-wrap: anywhere
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner-wrapper">
+        <div class="left-panel">
+            <div class="logo-box"><img
+                    src="data:image/png;base64,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"
+                    crossorigin="anonymous" style="max-width:88%;max-height:88%;object-fit:contain;"></div>
+            <div class="wrap-text">
+                <div class="f-title-cn text-[#00205B]">韩华海洋株式会社</div>
+                <div class="f-title-en uppercase">Hanwha Ocean Co., Ltd.</div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div style="margin-bottom:10vmin">
+                <div
+                    style="height:clamp(3px,.5vmin,8px);width:clamp(40px,8vmin,100px);background:#00205B;margin-bottom:3vmin">
+                </div>
+                <div class="f-tag-label uppercase">市场定位 / MARKET POSITIONING</div>
+                <div style="display:flex; flex-direction:column;">
+                    <div class="f-list-text">全球造船业“三巨头”之一（原大宇造船 DSME）</div>
+                    <div class="f-list-text">唯一具备美国本土造船能力的韩系厂商</div>
+                    <div class="f-list-text">LNG运输船交付量全球第一</div>
+                </div>
+            </div>
+            <div
+                style="display:grid;grid-template-columns:1fr 1fr;gap:6vmin;padding-top:4vmin;border-top:1px solid #e2e8f0">
+                <div>
+                    <div class="f-info-label uppercase">总部 / HQ</div>
+                    <div class="f-info-text mt-1" style="display:flex;align-items:center;"><span
+                            style="width:clamp(8px,1.2vmin,14px);height:clamp(8px,1.2vmin,14px);background:#00205B;display:inline-block;margin-right:2vmin;transform:rotate(45deg)"></span>韩国
+                        · 巨济市</div>
+                </div>
+                <div>
+                    <div class="f-info-label uppercase">基地 / BASES</div>
+                    <div class="f-info-text mt-1"
+                        style="font-style:italic;font-weight:300;color:#64748b;display:flex;align-items:center;">
+                        <span
+                            style="width:clamp(8px,1.2vmin,14px);height:clamp(8px,1.2vmin,14px);background:#cbd5e1;display:inline-block;margin-right:2vmin;transform:rotate(45deg)"></span>
+                        玉浦船厂（韩国巨济），Philly船厂（美国费城）
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="position:absolute;bottom:0;right:0;width:12vw;height:clamp(6px,1.8vmin,15px);background:#00205B">
+        </div>
+    </div>
+</body>
+
+</html>
