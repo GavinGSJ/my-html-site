@@ -1,1 +1,160 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Dashboard-Banner</title><script src="https://cdn.tailwindcss.com"></script><style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');html,body{margin:0;padding:0;height:100vh;width:100vw;overflow:hidden!important;font-family:'Inter',sans-serif;background-color:#fff}.f-title-cn{font-size:clamp(22px,6vmin,48px);font-weight:900;line-height:1;letter-spacing:-.03em}.f-title-en{font-size:clamp(9px,1.5vmin,15px);font-weight:700;letter-spacing:.4em;color:#94a3b8;margin-top:0.6vmin}.f-position{font-size:clamp(24px,7vmin,72px);font-weight:300;line-height:1;letter-spacing:-.04em;color:#1e293b}.f-tag-label{font-size:clamp(9px,1.4vmin,13px);font-weight:900;letter-spacing:.2em;color:#00205B}.f-info-text{font-size:clamp(11px,2vmin,22px);font-weight:600;color:#334155}.f-info-label{font-size:clamp(8px,1.1vmin,10px);font-weight:900;color:#94a3b8}.banner-wrapper{display:flex;height:100vh;width:100vw;border-left:clamp(10px,2vmin,24px) solid #00205B;box-sizing:border-box;background:#fff}.left-panel{width:45%;padding:clamp(24px,7vmin,70px);display:flex;flex-direction:column;justify-content:center;flex-shrink:0;border-right:1px solid #f1f5f9}.right-panel{width:55%;padding:clamp(24px,7vmin,70px);display:flex;flex-direction:column;justify-content:center;background-color:#F8FAFC;flex-shrink:0;position:relative}.logo-box{width:clamp(80px,22vmin,180px);height:clamp(80px,22vmin,180px);display:flex;align-items:center;justify-content:center;border:2.5px solid #00205B;margin-bottom:clamp(15px,5vmin,50px)}.nowrap{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}</style></head><body><div class="banner-wrapper"><div class="left-panel"><div class="logo-box"><img src="https://upload.wikimedia.org/wikipedia/commons/6/64/JGC_Corporation_company_logo.svg" crossorigin="anonymous" style="max-width:85%;max-height:85%;object-fit:contain;"></div><div style="overflow:hidden"><div class="f-title-cn text-[#00205B] nowrap">日挥控股株式会社</div><div class="f-title-en uppercase nowrap">JGC Holdings Corp.</div></div></div><div class="right-panel"><div style="position:absolute;top:5vmin;right:5vmin;opacity:.05"><svg width="clamp(30px,7vmin,60px)" height="clamp(30px,7vmin,60px)" viewBox="0 0 40 40"><path d="M0 0h40v1H0zM0 10h40v1H0zM0 20h40v1H0zM0 30h40v1H0z" fill="#00205B"/></svg></div><div style="margin-bottom:6vmin"><div style="height:clamp(2px,.4vmin,6px);width:clamp(30px,7vmin,70px);background:#00205B;margin-bottom:2vmin"></div><div class="f-tag-label uppercase">市场定位 / MARKET POSITIONING</div><div class="f-position mt-1">全球综合性EPC承包商及能源转型解决方案提供商</div></div><div style="display:grid;grid-template-columns:1fr;gap:6vmin;padding-top:4vmin;border-top:1.5px solid #e2e8f0"><div><div class="f-info-label uppercase">总部 / HQ</div><div class="f-info-text mt-1 nowrap"><span style="width:clamp(6px,1.1vmin,12px);height:clamp(6px,1.1vmin,12px);background:#00205B;display:inline-block;margin-right:1.5vmin;transform:rotate(45deg)"></span>日本 · 横滨</div></div></div></div><div style="position:absolute;bottom:0;right:0;width:12vw;height:clamp(5px,1.5vmin,12px);background:#00205B"></div></div></body></html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>日揮控股株式会社 (JGC)-Banner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap');
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden !important;
+            font-family: 'Inter', sans-serif;
+            background-color: #fff
+        }
+
+        .f-title-cn {
+            font-size: clamp(24px, 6.5vmin, 52px);
+            font-weight: 900;
+            line-height: 1.15;
+            letter-spacing: -.03em
+        }
+
+        .f-title-en {
+            font-size: clamp(10px, 1.6vmin, 18px);
+            font-weight: 700;
+            letter-spacing: .3em;
+            color: #94a3b8;
+            margin-top: 1.5vmin
+        }
+
+        .f-tag-label {
+            font-size: clamp(10px, 1.4vmin, 14px);
+            font-weight: 900;
+            letter-spacing: .25em;
+            color: #00205B;
+            margin-bottom: 4vmin
+        }
+
+        .f-list-text {
+            font-size: clamp(24px, 6.5vmin, 68px);
+            font-weight: 300;
+            color: #334155;
+            letter-spacing: -.04em;
+            line-height: 1.2;
+            margin-bottom: 2vmin
+        }
+
+        .f-info-text {
+            font-size: clamp(12px, 2.2vmin, 24px);
+            font-weight: 600;
+            color: #334155
+        }
+
+        .f-info-label {
+            font-size: clamp(8px, 1.1vmin, 10px);
+            font-weight: 900;
+            color: #94a3b8
+        }
+
+        .banner-wrapper {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            border-left: clamp(15px, 3vmin, 40px) solid #00205B;
+            box-sizing: border-box;
+            background: #fff
+        }
+
+        .left-panel {
+            width: 42%;
+            padding: clamp(30px, 8vmin, 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+            border-right: 1px solid #f1f5f9
+        }
+
+        .right-panel {
+            width: 58%;
+            padding: clamp(30px, 8vmin, 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #F8FAFC;
+            flex-shrink: 0;
+            position: relative
+        }
+
+        .logo-box {
+            width: clamp(100px, 32vmin, 260px);
+            height: clamp(100px, 32vmin, 260px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #00205B;
+            margin-bottom: clamp(30px, 7vmin, 70px)
+        }
+
+        .wrap-text {
+            word-break: break-word;
+            overflow-wrap: anywhere
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner-wrapper">
+        <div class="left-panel">
+            <div class="logo-box"><img
+                    src="data:image/png;base64,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"
+                    crossorigin="anonymous" style="max-width:88%;max-height:88%;object-fit:contain;"></div>
+            <div class="wrap-text">
+                <div class="f-title-cn text-[#00205B]">日揮控股株式会社</div>
+                <div class="f-title-en uppercase">JGC HOLDINGS CORPORATION</div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div style="margin-bottom:10vmin">
+                <div
+                    style="height:clamp(3px,.5vmin,8px);width:clamp(40px,8vmin,100px);background:#00205B;margin-bottom:3vmin">
+                </div>
+                <div class="f-tag-label uppercase">市场定位 / MARKET POSITIONING</div>
+                <div style="display:flex; flex-direction:column;">
+                    <div class="f-list-text">全球顶尖油气EPC承包商</div>
+                    <div class="f-list-text">东京交易所上市企业</div>
+                </div>
+            </div>
+            <div
+                style="display:grid;grid-template-columns:1fr 1fr;gap:6vmin;padding-top:4vmin;border-top:1px solid #e2e8f0">
+                <div>
+                    <div class="f-info-label uppercase">总部 / HQ</div>
+                    <div class="f-info-text mt-1" style="display:flex;align-items:center;"><span
+                            style="width:clamp(8px,1.2vmin,14px);height:clamp(8px,1.2vmin,14px);background:#00205B;display:inline-block;margin-right:2vmin;transform:rotate(45deg)"></span>日本
+                        · 横滨</div>
+                </div>
+                <div>
+                    <div class="f-info-label uppercase">基地 / BASES</div>
+                    <div class="f-info-text mt-1"
+                        style="font-style:italic;font-weight:300;color:#64748b;display:flex;align-items:center;">
+                        <span
+                            style="width:clamp(8px,1.2vmin,14px);height:clamp(8px,1.2vmin,14px);background:#cbd5e1;display:inline-block;margin-right:2vmin;transform:rotate(45deg)"></span>
+                        日本横滨
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="position:absolute;bottom:0;right:0;width:12vw;height:clamp(6px,1.8vmin,15px);background:#00205B">
+        </div>
+    </div>
+</body>
+
+</html>
