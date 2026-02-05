@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>佩伦科公司 (Perenco)-Banner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap');
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden !important;
+            font-family: 'Inter', sans-serif;
+            background-color: #fff
+        }
+
+        .f-title-cn {
+            font-size: clamp(24px, 6.5vmin, 52px);
+            font-weight: 900;
+            line-height: 1.15;
+            letter-spacing: -.03em
+        }
+
+        .f-title-en {
+            font-size: clamp(10px, 1.6vmin, 18px);
+            font-weight: 700;
+            letter-spacing: .3em;
+            color: #94a3b8;
+            margin-top: 1.5vmin
+        }
+
+        .f-tag-label {
+            font-size: clamp(10px, 1.4vmin, 14px);
+            font-weight: 900;
+            letter-spacing: .25em;
+            color: #00205B;
+            margin-bottom: 4vmin
+        }
+
+        .f-list-text {
+            font-size: clamp(24px, 6.5vmin, 68px);
+            font-weight: 300;
+            color: #334155;
+            letter-spacing: -.04em;
+            line-height: 1.2;
+            margin-bottom: 2vmin
+        }
+
+        .f-info-text {
+            font-size: clamp(12px, 2.2vmin, 24px);
+            font-weight: 600;
+            color: #334155
+        }
+
+        .f-info-label {
+            font-size: clamp(8px, 1.1vmin, 10px);
+            font-weight: 900;
+            color: #94a3b8
+        }
+
+        .banner-wrapper {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            border-left: clamp(15px, 3vmin, 40px) solid #00205B;
+            box-sizing: border-box;
+            background: #fff
+        }
+
+        .left-panel {
+            width: 42%;
+            padding: clamp(30px, 8vmin, 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+            border-right: 1px solid #f1f5f9
+        }
+
+        .right-panel {
+            width: 58%;
+            padding: clamp(30px, 8vmin, 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #F8FAFC;
+            flex-shrink: 0;
+            position: relative
+        }
+
+        .logo-box {
+            width: clamp(100px, 32vmin, 260px);
+            height: clamp(100px, 32vmin, 260px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #00205B;
+            margin-bottom: clamp(30px, 7vmin, 70px)
+        }
+
+        .wrap-text {
+            word-break: break-word;
+            overflow-wrap: anywhere
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner-wrapper">
+        <div class="left-panel">
+            <div class="logo-box"><img
+                    src="data:image/png;base64,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"
+                    crossorigin="anonymous" style="max-width:88%;max-height:88%;object-fit:contain;"></div>
+            <div class="wrap-text">
+                <div class="f-title-cn text-[#00205B]">佩伦科公司</div>
+                <div class="f-title-en uppercase">Perenco</div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div style="margin-bottom:10vmin">
+                <div
+                    style="height:clamp(3px,.5vmin,8px);width:clamp(40px,8vmin,100px);background:#00205B;margin-bottom:3vmin">
+                </div>
+                <div class="f-tag-label uppercase">市场定位 / MARKET POSITIONING</div>
+                <div style="display:flex; flex-direction:column;">
+                    <div class="f-list-text">欧洲最大的私营独立油气运营商</div>
+                    <div class="f-list-text">成熟资产与晚期油田专家</div>
+                    <div class="f-list-text">日产量50万桶油当量</div>
+                </div>
+            </div>
+            <div
+                style="display:grid;grid-template-columns:1fr;gap:6vmin;padding-top:4vmin;border-top:1px solid #e2e8f0">
+                <div>
+                    <div class="f-info-label uppercase">总部 / HQ</div>
+                    <div class="f-info-text mt-1" style="display:flex;align-items:center;"><span
+                            style="width:clamp(8px,1.2vmin,14px);height:clamp(8px,1.2vmin,14px);background:#00205B;display:inline-block;margin-right:2vmin;transform:rotate(45deg)"></span>英国
+                        · 伦敦</div>
+                </div>
+            </div>
+        </div>
+        <div style="position:absolute;bottom:0;right:0;width:12vw;height:clamp(6px,1.8vmin,15px);background:#00205B">
+        </div>
+    </div>
+</body>
+
+</html>
