@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Höegh Evi Ltd.-Banner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap');
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden !important;
+            font-family: 'Inter', sans-serif;
+            background-color: #fff
+        }
+
+        .f-title-cn {
+            font-size: clamp(24px, 6.5vmin, 52px);
+            font-weight: 900;
+            line-height: 1.15;
+            letter-spacing: -.03em
+        }
+
+        .f-title-en {
+            font-size: clamp(10px, 1.6vmin, 18px);
+            font-weight: 700;
+            letter-spacing: .3em;
+            color: #94a3b8;
+            margin-top: 1.5vmin
+        }
+
+        .f-tag-label {
+            font-size: clamp(10px, 1.4vmin, 14px);
+            font-weight: 900;
+            letter-spacing: .25em;
+            color: #00205B;
+            margin-bottom: 4vmin
+        }
+
+        .f-list-text {
+            font-size: clamp(24px, 6.5vmin, 68px);
+            font-weight: 300;
+            color: #334155;
+            letter-spacing: -.04em;
+            line-height: 1.2;
+            margin-bottom: 2vmin
+        }
+
+        .f-info-text {
+            font-size: clamp(12px, 2.2vmin, 24px);
+            font-weight: 600;
+            color: #334155
+        }
+
+        .f-info-label {
+            font-size: clamp(8px, 1.1vmin, 10px);
+            font-weight: 900;
+            color: #94a3b8
+        }
+
+        .banner-wrapper {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            border-left: clamp(15px, 3vmin, 40px) solid #00205B;
+            box-sizing: border-box;
+            background: #fff
+        }
+
+        .left-panel {
+            width: 42%;
+            padding: clamp(30px, 8vmin, 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+            border-right: 1px solid #f1f5f9
+        }
+
+        .right-panel {
+            width: 58%;
+            padding: clamp(30px, 8vmin, 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #F8FAFC;
+            flex-shrink: 0;
+            position: relative
+        }
+
+        .logo-box {
+            width: clamp(100px, 32vmin, 260px);
+            height: clamp(100px, 32vmin, 260px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #00205B;
+            margin-bottom: clamp(30px, 7vmin, 70px)
+        }
+
+        .wrap-text {
+            word-break: break-word;
+            overflow-wrap: anywhere
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner-wrapper">
+        <div class="left-panel">
+            <div class="logo-box"><img
+                    src="data:image/jpeg;base64,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"
+                    crossorigin="anonymous" style="max-width:88%;max-height:88%;object-fit:contain;"></div>
+            <div class="wrap-text">
+                <div class="f-title-cn text-[#00205B]">Höegh Evi Ltd.</div>
+                <div class="f-title-en uppercase"></div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div style="margin-bottom:10vmin">
+                <div
+                    style="height:clamp(3px,.5vmin,8px);width:clamp(40px,8vmin,100px);background:#00205B;margin-bottom:3vmin">
+                </div>
+                <div class="f-tag-label uppercase">市场定位 / MARKET POSITIONING</div>
+                <div style="display:flex; flex-direction:column;">
+                    <div class="f-list-text">浮动能源设施租赁运营商</div>
+                    <div class="f-list-text">氨氢CCS拓展</div>
+                </div>
+            </div>
+            <div
+                style="display:grid;grid-template-columns:1fr;gap:6vmin;padding-top:4vmin;border-top:1px solid #e2e8f0">
+                <div>
+                    <div class="f-info-label uppercase">总部 / HQ</div>
+                    <div class="f-info-text mt-1" style="display:flex;align-items:center;"><span
+                            style="width:clamp(8px,1.2vmin,14px);height:clamp(8px,1.2vmin,14px);background:#00205B;display:inline-block;margin-right:2vmin;transform:rotate(45deg)"></span>挪威
+                        · 奥斯陆</div>
+                </div>
+            </div>
+        </div>
+        <div style="position:absolute;bottom:0;right:0;width:12vw;height:clamp(6px,1.8vmin,15px);background:#00205B">
+        </div>
+    </div>
+</body>
+
+</html>
