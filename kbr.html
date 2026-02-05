@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>KBR公司 (KBR)-Banner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap');
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden !important;
+            font-family: 'Inter', sans-serif;
+            background-color: #fff
+        }
+
+        .f-title-cn {
+            font-size: clamp(24px, 6.5vmin, 52px);
+            font-weight: 900;
+            line-height: 1.15;
+            letter-spacing: -.03em
+        }
+
+        .f-title-en {
+            font-size: clamp(10px, 1.6vmin, 18px);
+            font-weight: 700;
+            letter-spacing: .3em;
+            color: #94a3b8;
+            margin-top: 1.5vmin
+        }
+
+        .f-tag-label {
+            font-size: clamp(10px, 1.4vmin, 14px);
+            font-weight: 900;
+            letter-spacing: .25em;
+            color: #00205B;
+            margin-bottom: 4vmin
+        }
+
+        .f-list-text {
+            font-size: clamp(24px, 6.5vmin, 68px);
+            font-weight: 300;
+            color: #334155;
+            letter-spacing: -.04em;
+            line-height: 1.2;
+            margin-bottom: 2vmin
+        }
+
+        .f-info-text {
+            font-size: clamp(12px, 2.2vmin, 24px);
+            font-weight: 600;
+            color: #334155
+        }
+
+        .f-info-label {
+            font-size: clamp(8px, 1.1vmin, 10px);
+            font-weight: 900;
+            color: #94a3b8
+        }
+
+        .banner-wrapper {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            border-left: clamp(15px, 3vmin, 40px) solid #00205B;
+            box-sizing: border-box;
+            background: #fff
+        }
+
+        .left-panel {
+            width: 42%;
+            padding: clamp(30px, 8vmin, 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+            border-right: 1px solid #f1f5f9
+        }
+
+        .right-panel {
+            width: 58%;
+            padding: clamp(30px, 8vmin, 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #F8FAFC;
+            flex-shrink: 0;
+            position: relative
+        }
+
+        .logo-box {
+            width: clamp(100px, 32vmin, 260px);
+            height: clamp(100px, 32vmin, 260px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #00205B;
+            margin-bottom: clamp(30px, 7vmin, 70px)
+        }
+
+        .wrap-text {
+            word-break: break-word;
+            overflow-wrap: anywhere
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner-wrapper">
+        <div class="left-panel">
+            <div class="logo-box"><img
+                    src="data:image/png;base64,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"
+                    crossorigin="anonymous" style="max-width:88%;max-height:88%;object-fit:contain;"></div>
+            <div class="wrap-text">
+                <div class="f-title-cn text-[#00205B]">KBR公司</div>
+                <div class="f-title-en uppercase">KBR, Inc.</div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div style="margin-bottom:10vmin">
+                <div
+                    style="height:clamp(3px,.5vmin,8px);width:clamp(40px,8vmin,100px);background:#00205B;margin-bottom:3vmin">
+                </div>
+                <div class="f-tag-label uppercase">市场定位 / MARKET POSITIONING</div>
+                <div style="display:flex; flex-direction:column;">
+                    <div class="f-list-text">全球顶尖工程与技术服务商</div>
+                    <div class="f-list-text">技术授权+EPC+政府服务</div>
+                    <div class="f-list-text">合成氨与石化工艺技术领导者</div>
+                </div>
+            </div>
+            <div
+                style="display:grid;grid-template-columns:1fr;gap:6vmin;padding-top:4vmin;border-top:1px solid #e2e8f0">
+                <div>
+                    <div class="f-info-label uppercase">总部 / HQ</div>
+                    <div class="f-info-text mt-1" style="display:flex;align-items:center;"><span
+                            style="width:clamp(8px,1.2vmin,14px);height:clamp(8px,1.2vmin,14px);background:#00205B;display:inline-block;margin-right:2vmin;transform:rotate(45deg)"></span>美国
+                        · 休斯敦</div>
+                </div>
+            </div>
+        </div>
+        <div style="position:absolute;bottom:0;right:0;width:12vw;height:clamp(6px,1.8vmin,15px);background:#00205B">
+        </div>
+    </div>
+</body>
+
+</html>
