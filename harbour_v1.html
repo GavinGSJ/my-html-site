@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>哈伯能源有限公司 (Harbour Energy)-Banner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap');
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden !important;
+            font-family: 'Inter', sans-serif;
+            background-color: #fff
+        }
+
+        .f-title-cn {
+            font-size: clamp(24px, 6.5vmin, 52px);
+            font-weight: 900;
+            line-height: 1.15;
+            letter-spacing: -.03em
+        }
+
+        .f-title-en {
+            font-size: clamp(10px, 1.6vmin, 18px);
+            font-weight: 700;
+            letter-spacing: .3em;
+            color: #94a3b8;
+            margin-top: 1.5vmin
+        }
+
+        .f-tag-label {
+            font-size: clamp(10px, 1.4vmin, 14px);
+            font-weight: 900;
+            letter-spacing: .25em;
+            color: #00205B;
+            margin-bottom: 4vmin
+        }
+
+        .f-list-text {
+            font-size: clamp(24px, 6.5vmin, 68px);
+            font-weight: 300;
+            color: #334155;
+            letter-spacing: -.04em;
+            line-height: 1.2;
+            margin-bottom: 2vmin
+        }
+
+        .f-info-text {
+            font-size: clamp(12px, 2.2vmin, 24px);
+            font-weight: 600;
+            color: #334155
+        }
+
+        .f-info-label {
+            font-size: clamp(8px, 1.1vmin, 10px);
+            font-weight: 900;
+            color: #94a3b8
+        }
+
+        .banner-wrapper {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            border-left: clamp(15px, 3vmin, 40px) solid #00205B;
+            box-sizing: border-box;
+            background: #fff
+        }
+
+        .left-panel {
+            width: 42%;
+            padding: clamp(30px, 8vmin, 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+            border-right: 1px solid #f1f5f9
+        }
+
+        .right-panel {
+            width: 58%;
+            padding: clamp(30px, 8vmin, 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #F8FAFC;
+            flex-shrink: 0;
+            position: relative
+        }
+
+        .logo-box {
+            width: clamp(100px, 32vmin, 260px);
+            height: clamp(100px, 32vmin, 260px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #00205B;
+            margin-bottom: clamp(30px, 7vmin, 70px)
+        }
+
+        .wrap-text {
+            word-break: break-word;
+            overflow-wrap: anywhere
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner-wrapper">
+        <div class="left-panel">
+            <div class="logo-box"><img
+                    src="data:image/png;base64,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"
+                    crossorigin="anonymous" style="max-width:88%;max-height:88%;object-fit:contain;"></div>
+            <div class="wrap-text">
+                <div class="f-title-cn text-[#00205B]">哈伯能源有限公司</div>
+                <div class="f-title-en uppercase">Harbour Energy plc</div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div style="margin-bottom:10vmin">
+                <div
+                    style="height:clamp(3px,.5vmin,8px);width:clamp(40px,8vmin,100px);background:#00205B;margin-bottom:3vmin">
+                </div>
+                <div class="f-tag-label uppercase">市场定位 / MARKET POSITIONING</div>
+                <div style="display:flex; flex-direction:column;">
+                    <div class="f-list-text">英国最大的独立油气上游勘探开发商</div>
+                    <div class="f-list-text">460-475千桶/日产量</div>
+                    <div class="f-list-text">领先的低成本运营标杆($13/boe)</div>
+                </div>
+            </div>
+            <div
+                style="display:grid;grid-template-columns:1fr;gap:6vmin;padding-top:4vmin;border-top:1px solid #e2e8f0">
+                <div>
+                    <div class="f-info-label uppercase">总部 / HQ</div>
+                    <div class="f-info-text mt-1" style="display:flex;align-items:center;"><span
+                            style="width:clamp(8px,1.2vmin,14px);height:clamp(8px,1.2vmin,14px);background:#00205B;display:inline-block;margin-right:2vmin;transform:rotate(45deg)"></span>英国
+                        · 伦敦</div>
+                </div>
+            </div>
+        </div>
+        <div style="position:absolute;bottom:0;right:0;width:12vw;height:clamp(6px,1.8vmin,15px);background:#00205B">
+        </div>
+    </div>
+</body>
+
+
+</html>
